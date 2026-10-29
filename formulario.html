@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Rutinas de estudio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<h1>Hábitos de estudio</h1>
+<form action="procesar.php" method="post">
+    <label>Horario preferido:
+        <select name="horario" required>
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+        </select>
+    </label><br>
+    <label>Método de aprendizaje:
+        <select name="metodo" required>
+            <option value="">--Elige una opción--</option>
+            <option value="practica">Práctica</option>
+            <option value="lectura">Lectura</option>
+        </select>
+    </label><br>
+    <label>Frecuencia de repaso:
+        <select name="repaso" required>
+            <option value="">--Elige una opción--</option>
+            <option value="diario">Diario</option>
+            <option value="semanal">Semanal</option>
+        </select>
+    </label><br>
+    <button type="submit">Calcular perfil</button>
+</form>
+</body>
+</html>
